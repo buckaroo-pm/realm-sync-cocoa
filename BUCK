@@ -17,7 +17,7 @@ prebuilt_cxx_library(
     extractFolder(':realm-sync-cocoa-archive', 'core/include'),
   ],
   preferred_linkage = 'static', 
-  platform_shared_lib = [
+  platform_static_lib = [
     ('macos.*', extract(':realm-sync-cocoa-archive', 'core/librealm-macosx.a')),
     ('iphone.*', extract(':realm-sync-cocoa-archive', 'core/librealm-ios.a')),
   ], 
@@ -29,7 +29,7 @@ prebuilt_cxx_library(
 prebuilt_cxx_library(
   name = 'realm-parser', 
   preferred_linkage = 'static', 
-  platform_shared_lib = [
+  platform_static_lib = [
     ('macos.*', extract(':realm-sync-cocoa-archive', 'core/librealm-parser-macosx.a')),
     ('iphone.*', extract(':realm-sync-cocoa-archive', 'core/librealm-parser-ios.a')),
   ], 
