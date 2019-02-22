@@ -1,6 +1,6 @@
 load('//:utils.bzl', 'extract', 'extractFolder')
 
-version = '3.13.3'
+version = '3.14.12'
 
 http_archive(
   name = 'realm-sync-cocoa-archive',
@@ -8,7 +8,7 @@ http_archive(
   urls = [
     'https://static.realm.io/downloads/sync/realm-sync-cocoa-' + version + '.tar.xz',
   ],
-  sha256 = '14acd38d0f3875392aa53db5adcaa33fb65bb79feb2af1af26e8c2704db96838',
+  sha256 = '7dd66ea5f02e28b7b1bc64cbbcedd2a1ab29ab5e689c272cb73392616acdd978',
 )
 
 prebuilt_cxx_library(
